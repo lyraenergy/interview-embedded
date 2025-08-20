@@ -17,7 +17,7 @@ Goal: Demonstrate knowledge of embedded software and vehicle components in Pytho
 - Log all error messages and implement a service that keeps a log of errors and runtime events (to a file or systemd journal)
 - Implement a Python function that decodes raw CAN bytes for `VehicleSpeedKph` and returns `kph`
 - Follow Python conventions, include any dependencies, and a `README.md` with clear setup and run instructions
-- (Extra points) Use Docker or a virtual environment so anyone can run your code, including socketcan dependencies
+- Use Docker or virtual environment so anyone can easily run your code, including dependencies
 
 `VCU.dbc`
 
