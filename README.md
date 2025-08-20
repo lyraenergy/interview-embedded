@@ -80,7 +80,7 @@ CM_ SG_ 256 Counter "4-bit rolling counter (0..15) increments each tx, wraps to 
 - What happens when the Counter reaches `0xF`? What comes next? How should a receiver use this counter to detect lost frames?
 - Write a Python function that takes a payload and returns (VehicleSpeedKph, Counter) as a tuple
 
-### Bonus Questions
+### Additional Questions
 
 - Implement logic to detect when no VehicleSpeedKph message is received for >200 ms. Log an error and enter a fallback state.
 - Detect `BUSOFF` or driver reset conditions from python-can and implement automatic recovery or reconnection.
