@@ -81,10 +81,10 @@ CM_ SG_ 256 Counter "4-bit rolling counter (0..15) increments each tx, wraps to 
 - Show how you would create a structure for `VehicleSpeedMsg` and write encode/decode functions that map this struct to/from an 8-byte CAN payload.
 - Describe how you would abstract a CAN driver to work across both Linux socketcan and a microcontroller CAN
 
-### Additional Questions
+### Additional Questions (Extra Credit)
 
-- Implement logic to detect when no VehicleSpeedKph message is received for >200 ms. Log an error and enter a fallback state.
-- Detect `BUSOFF` or driver reset conditions from python-can and implement automatic recovery or reconnection.
+- In the Python service implement logic to detect when no VehicleSpeedKph message is received for >200 ms. Log an error and enter a fallback state.
+- How would you detect `BUSOFF` or driver reset conditions from python-can and implement automatic recovery or reconnection.
 - Simulate bad CAN frames (corruption or missing bytes). Show how your service detects and logs them.
 - Write a monitor that checks the Counter increments sequentially and flags when it jumps or repeats unexpectedly.
 - Extend your ECU simulator to publish a second message `VehicleSpeedMph`, derived from `VehicleSpeedKph`. What would you change?
